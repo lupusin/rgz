@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>АО "НДБанк"</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="pict\favicon-16x16.png" type="image/png">
+    <link rel="icon" href="pict\favicon-32x32.png" type="image/png">
+  </head>
+  <body>
+    <div class="content">
+        <header>
+          <nav>
+            <ul>
+                <li><a class="menu1" href="contact.html"> <i>+7 (495) 899-36-33 </i></a></li>
+                <li><a class="menu1" href="contact.html"><i>Банкоматы</i></a></li>
+                <li><a class="menu1" href="index.html"><i>Интернет-банк</i></a></li>
+            </ul>
+          </nav>
+        </header>
+    <div class="container">
+      <div class="sidebar1">
+        <ul class="menu">
+          <li><a href="index.html"><img class="logo" src="pict/image3.png"></a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="calc.html">Калькулятор</a></li>
+          <li><a href="contact.html">Контактные данные</a></li>
+          <li><a href="video.html">Видео</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <main>
+          <section class="hero">
+            <h1>Курс валют</h1>
+            <p>Курс юаня: <span id="yuanRate"></span> RUB</p>
+            <label for="amount">Количество:</label>
+            <input type="number" id="amount" step="0.01">
+            <label for="fromCurrency">Из валюты:</label>
+            <select id="fromCurrency">
+                <option value="RUB">Рубли</option>
+                <option value="CNY">Юани</option>
+            </select>
+            <label for="toCurrency">В валюту:</label>
+            <select id="toCurrency">
+                <option value="CNY">Юани</option>
+                <option value="RUB">Рубли</option>
+            </select>
+            <label for="result">Результат:</label>
+            <input type="text" id="result" readonly>
+                  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                  <script src="scripts/calc.js"></script>
+              </div>
+        </main>
+        </div>
+    </div>
+        <footer>
+          <p>&copy; Все права защищены и охраняются законом. © 1993 -2024 АО «НДБанк», официальный сайт. Лицензия ЦБ РФ № 2374 на совершение банковских операций.</p>
+        </footer>
+      
+  </body>
+</html>
